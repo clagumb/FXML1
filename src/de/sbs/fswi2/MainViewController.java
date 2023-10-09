@@ -16,19 +16,19 @@ public class MainViewController implements Initializable {
 	private VBox vbox;
 	
 	@FXML
-	private void BeendenEventHandler(ActionEvent event) {
+	private void beenden(ActionEvent event) {
 		Platform.exit();
 	}
 
 	@FXML
-	private void AddLabelEventHandler(ActionEvent event) {
+	private void addLabel(ActionEvent event) {
 		WI2Label lokalLabel = new WI2Label();
 		lokalLabel.setText("Text " + (vbox.getChildren().size() + 1));
 		vbox.getChildren().add(lokalLabel);
 	}
 
 	@FXML
-	private void DeleteLabelEventHandler(ActionEvent event) {
+	private void deleteLabel(ActionEvent event) {
 		vbox.getChildren().remove(vbox.getChildren().size() - 1);
 	}
 	
