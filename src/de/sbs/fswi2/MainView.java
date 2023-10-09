@@ -4,16 +4,13 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
 public class MainView extends Application {
 
 	@Override
 	public void start(Stage stage) throws Exception {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("./mainview.fxml"));
-		loader.setRoot(new FlowPane());
-		Parent rootNode = loader.load();
+		Parent rootNode = FXMLLoader.load(getClass().getResource("./mainview.fxml"));
 		Scene scene = new Scene(rootNode);
 		stage.setScene(scene);
 		stage.show();
