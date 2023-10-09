@@ -15,6 +15,10 @@ public class MainView extends Application {
 		loader.setRoot(new FlowPane());
 		Parent rootNode = loader.load();
 		Scene scene = new Scene(rootNode);
+		
+		MainViewController controller = (MainViewController) loader.getController();
+		controller.setStage(stage);
+		
 		stage.setScene(scene);
 		stage.show();
 	}

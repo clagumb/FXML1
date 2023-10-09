@@ -9,12 +9,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 public class MainViewController implements Initializable {
 
 	@FXML
 	private VBox vbox;
-	
+	private Stage stage;
+
 	@FXML
 	private void beenden(ActionEvent event) {
 		Platform.exit();
@@ -31,9 +33,14 @@ public class MainViewController implements Initializable {
 	private void deleteLabel(ActionEvent event) {
 		vbox.getChildren().remove(vbox.getChildren().size() - 1);
 	}
-	
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		
+
+	}
+
+	public void setStage(Stage stage) {
+		this.stage = stage;
+		this.stage.setTitle("FXML1 FSWI-2");
 	}
 }
