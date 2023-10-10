@@ -7,7 +7,7 @@
 
 <fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="600.0" type="FlowPane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.sbs.fswi2.MainViewController">
    <children>
-      <VBox prefHeight="225.0" prefWidth="188.0">
+      <VBox fx:id="vbox" prefHeight="225.0" prefWidth="188.0">
          <children>
             <WI2Label text="Text 1" />
             <WI2Label text="Text 2" />
@@ -16,7 +16,7 @@
          </children>
       </VBox>
       <WI2Button onAction="#beenden" text="Beenden" />
-      <WI2Button text="Add Label" />
-      <WI2Button text="Delete Label" />
+      <WI2Button onAction="#addLabel" text="Add Label" />
+      <WI2Button onAction="#deleteLabel" text="Delete Label" />
    </children>
 </fx:root>

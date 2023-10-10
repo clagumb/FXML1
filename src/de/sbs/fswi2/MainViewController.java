@@ -23,5 +23,15 @@ public class MainViewController implements Initializable {
 	private void beenden(ActionEvent event) {
 		Platform.exit();
 	}
+	
+	@FXML
+	private void addLabel(ActionEvent event) {
+		Platform.exit();
+	}
+	
+	@FXML
+	private void deleteLabel(ActionEvent event) {
+		Platform.exit();
+	}
 
 }
