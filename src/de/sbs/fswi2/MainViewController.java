@@ -3,6 +3,7 @@ package de.sbs.fswi2;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import de.sbs.fswi2.customcontrols.WI2Button;
 import de.sbs.fswi2.customcontrols.WI2Label;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -12,10 +13,10 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class MainViewController implements Initializable {
-
+		
+	// Bereich fü FXML
 	@FXML
 	private VBox vbox;
-	private Stage stage;
 
 	@FXML
 	private void beenden(ActionEvent event) {
@@ -34,13 +35,22 @@ public class MainViewController implements Initializable {
 		vbox.getChildren().remove(vbox.getChildren().size() - 1);
 	}
 
-	@Override
-	public void initialize(URL location, ResourceBundle resources) {
-
-	}
-
+	// NORMALE Klassenmembers des Controlles
+	private final int CONROLS_ON_START = 4;
+	private Stage stage;
+	
 	public void setStage(Stage stage) {
 		this.stage = stage;
 		this.stage.setTitle("FXML1 FSWI-2");
+	}
+	
+	// Interface
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		for (int i = 0; i < CONROLS_ON_START; i++) {
+			WI2Label lbl = new WI2Label();
+			lbl.setText("Text " + (i + 1));
+			vbox.getChildren().add(lbl);
+		}
 	}
 }
