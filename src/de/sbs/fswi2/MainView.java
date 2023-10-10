@@ -16,6 +16,10 @@ public class MainView extends Application {
 		Parent rootNode = loader.load();
 		Scene scene = new Scene(rootNode);
 		stage.setScene(scene);
+		
+		MainViewController mainViewController = (MainViewController) loader.getController();
+		mainViewController.setStage(stage);
+		
 		stage.show();
 	}
 	
