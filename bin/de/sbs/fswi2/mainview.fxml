@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.VBox?>
 
-<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="600.0" type="FlowPane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.sbs.fswi2.MainViewController">
    <children>
       <VBox prefHeight="225.0" prefWidth="188.0">
          <children>
@@ -15,8 +15,8 @@
             <WI2Label text="Text 4" />
          </children>
       </VBox>
-      <WI2Button text="Beenden" />
+      <WI2Button onAction="#beenden" text="Beenden" />
       <WI2Button text="Add Label" />
       <WI2Button text="Delete Label" />
    </children>
-</FlowPane>
+</fx:root>
