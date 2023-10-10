@@ -2,7 +2,6 @@ package de.sbs.fswi2;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import de.sbs.fswi2.customcontrols.WI2Button;
 import de.sbs.fswi2.customcontrols.WI2Label;
 import javafx.application.Platform;
@@ -14,7 +13,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class MainViewController implements Initializable {
-
 	private final int CONTROLS_ON_START = 5;
 	private Stage stage;
 	
@@ -29,6 +27,11 @@ public class MainViewController implements Initializable {
 	FlowPane pane =	(FlowPane) vbox.getParent();
 	WI2Button btn = (WI2Button) pane.getChildren().get(3);
 	btn.setStyle("-fx-background-color:black;");	
+
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		// TODO Auto-generated method stub
+
 	}
 	
 	@FXML
@@ -38,6 +41,7 @@ public class MainViewController implements Initializable {
 	private void beenden(ActionEvent event) {
 		Platform.exit();
 	}
+
 
 	@FXML
 	private void addLabel(ActionEvent event) {
@@ -61,4 +65,4 @@ public class MainViewController implements Initializable {
 		stage.setTitle("TEST");
 	}
 	
-}
+  }
