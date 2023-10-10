@@ -3,7 +3,6 @@ package de.sbs.fswi2;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import de.sbs.fswi2.customcontrols.WI2Button;
 import de.sbs.fswi2.customcontrols.WI2Label;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
