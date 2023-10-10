@@ -11,6 +11,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/FXMLCustomControls"/>
+	<classpathentry kind="lib" path="C:/Users/cgg/Documents/jars/CustomControls/WI2Button.jar"/>
+	<classpathentry kind="lib" path="C:/Users/cgg/Documents/jars/CustomControls/WI2Label.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
